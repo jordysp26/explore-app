@@ -17,6 +17,10 @@ export class AppComponent implements OnInit {
     {
       alias: 'TRADING',
       nombre: 'Trading'
+    },
+    {
+      alias: "CLOUDINARY",
+      nombre: 'Cloudinary'
     }
   ]
   frequentQuestions!: FrequentQuestion[];
