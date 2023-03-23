@@ -18,9 +18,19 @@
             </ul>
           </div>
           <div class="col-lg-9">
-            <video width="540" height="310" controls>
-              <source src="https://res.cloudinary.com/dathwi8ps/video/upload/v1679529921/BANK_-_Tablas_y_consultas_Google_Chrome_2023-03-22_21-02-08_kjuggm.mp4" type="video/mp4">
-            </video>
+            <ng-container *ngIf="frequentQuestions">
+              <ng-container *ngFor="let question of frequentQuestions">
+                  <h4 class="extrabold text-black">{{question.title}}</h4>
+                  <video width="540" height="310" controls>
+                    <source [src]="question.video" type="video/mp4">
+                  </video>
+
+  
+              </ng-container>
+
+            </ng-container>
+            
+            
           </div>
     
         </div>

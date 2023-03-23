@@ -1,24 +1,26 @@
 {
   "BANCO": [
     {
+      "title": "Tablas y consultas",
       "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679529921/BANK_-_Tablas_y_consultas_Google_Chrome_2023-03-22_21-02-08_kjuggm.mp4"
     },
     {
+      "title": "Login y dashboard",
       "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679529480/BANK_-_Login_-_Dashboard_-Google_Chrome_2023-03-22_20-55-05_qduqca.mp4"
     },
     {
+      "title": "Preguntas frecuentes",
       "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679530171/BANK_-_Centro_de_ayuda_-_Google_Chrome_2023-03-22_21-06-40_z2ryhl.mp4"
     }
   ],
   "TRADING": [
     {
-      "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679529921/BANK_-_Tablas_y_consultas_Google_Chrome_2023-03-22_21-02-08_kjuggm.mp4"
+      "title": "Combo Select",
+      "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679572735/Exchange_-_Combo_Select_-_Google_Chrome_2023-03-23_08-57-38_e181qr.mp4"
     },
     {
-      "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679529480/BANK_-_Login_-_Dashboard_-Google_Chrome_2023-03-22_20-55-05_qduqca.mp4"
-    },
-    {
-      "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679530171/BANK_-_Centro_de_ayuda_-_Google_Chrome_2023-03-22_21-06-40_z2ryhl.mp4"
+      "title": "Cambio de color de fondo",
+      "video": "https://res.cloudinary.com/dathwi8ps/video/upload/v1679573604/Exchange___Cambio_de_color_de_fondo_-_Google_Chrome_2023-03-23_09-11-07_lscqwa.mp4"
     }
   ]
 }

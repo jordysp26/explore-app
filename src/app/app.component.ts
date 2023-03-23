@@ -15,11 +15,11 @@ export class AppComponent implements OnInit {
       nombre: 'Banco'
     },
     {
-      alias: 'TRANDING',
+      alias: 'TRADING',
       nombre: 'Trading'
     }
   ]
-  frequentQuestions!: FrequentQuestion;
+  frequentQuestions!: FrequentQuestion[];
   selectedOption:any
 
   constructor(private centroAyudaService: CentroAyudaService) {
@@ -29,14 +29,22 @@ export class AppComponent implements OnInit {
   ngOnInit():void{
     this.centroAyudaService.getData();
     setTimeout(()=>{
-      this.getFrequentQuestions();
-      console.log('frequentQuestions: ', this.frequentQuestions)
+      
+      this.setInitialOptionSelected('BANCO')
 
     }, 500)
   }
 
+  setInitialOptionSelected(alias: string): void {
+    this.selectedOption = this.options.find(
+      (option) => option.alias.toUpperCase() === alias.toUpperCase()
+    );
+    console.log('selectedOption: ', this.selectedOption)
+    this.getFrequentQuestions();
+  }
+
   getFrequentQuestions(): void {
-    this.frequentQuestions = this.centroAyudaService.get(this.options[0].alias);
+    this.frequentQuestions = this.centroAyudaService.get(this.selectedOption.alias);
   }
 
   onSelect(option: any): void {

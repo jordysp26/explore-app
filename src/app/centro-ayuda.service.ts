@@ -36,7 +36,7 @@ export class CentroAyudaService {
     return this.isData.asObservable();
   }
 
-  get(key: string): FrequentQuestion {
+  get(key: string): FrequentQuestion[] {
     return this.data[key];
   }
 }

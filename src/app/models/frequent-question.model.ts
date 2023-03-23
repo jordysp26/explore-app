@@ -2,6 +2,5 @@ import { Declaration } from './declaration.model';
 
 export interface FrequentQuestion {
   title: string;
-  description: string;
-  declarations: Declaration[];
+  video: string;
 }
